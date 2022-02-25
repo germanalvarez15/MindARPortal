@@ -325,15 +325,7 @@
         });
       };
       
-      const startButton = document.querySelector("#startButton");
-      startButton.addEventListener("click", () => {
         start();
-        
-      });
-      stopButton.addEventListener("click", () => {
-        mindarThree.stop();
-        mindarThree.renderer.setAnimationLoop(null);
-      });
     </script>
 
     <style>
@@ -346,19 +338,9 @@
         position: relative;
         overflow: hidden;
       }
-      #control {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 2;
-      }
     </style>
   </head>
   <body>
-    <div id="control">
-      <button id="startButton">Start</button>
-      <button id="stopButton">Stop</button>
-    </div>
     <div id="container"></div>
   </body>
 </html>
